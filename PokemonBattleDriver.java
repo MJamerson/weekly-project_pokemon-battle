@@ -1,10 +1,14 @@
+Pokemon player = new Pokemon("Pikachu", 100);;
+Pokemon enemy = new Pokemon("Meowth", 100);;
+
 public static void main(String [] args){
-	initializePokemon();
-	beginBattle();
+	doBattle();
 	printResults();
 }
 
-public void initializePokemon(){
-	Pokemon player = new Pokemon("Pikachu", 100);
-	player.toString();
+public void doBattle(){
+	while(player.isAlive() && enemy.isAlive()){
+
+	}
 }
+
