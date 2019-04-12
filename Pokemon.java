@@ -3,13 +3,14 @@ public class Pokemon{
 	int maxHealth;
 	int health;
 	boolean alive;
+	Move[] moveList;
 
 	public Pokemon(String name, int health){
 		this.name = name;
 		this.maxHealth = health;
 		this.health = health;
 		this.alive = true;
-//		this.movelist = [["Scratch", 18, 25], ["Bite", 10, 35], ["Lick Wounds", 5, 20]];
+		this.movelist = [new Move("Scratch", 18, 25), new Move("Bite", 10, 35), new Move("Lick Wounds", 5, 20)];
 	}
 	
 	public updateHealth(int amount){
@@ -33,6 +34,10 @@ public class Pokemon{
 	
 	public int getMaxHealth(){
 		return maxHealth;
+	}
+
+	public Move[] getMoveList() {
+		return moveList;
 	}
 
 	public boolean isAlive() {
