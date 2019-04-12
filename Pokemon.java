@@ -10,10 +10,10 @@ public class Pokemon{
 		this.maxHealth = health;
 		this.health = health;
 		this.alive = true;
-		this.movelist = [new Move("Scratch", 18, 25), new Move("Bite", 10, 35), new Move("Lick Wounds", 5, 20)];
+		this.moveList = new Move[]{new Move("Scratch", 18, 25), new Move("Bite", 10, 35), new Move("Lick Wounds", -5, -20)};
 	}
 	
-	public updateHealth(int amount){
+	public void updateHealth(int amount){
 		health += amount;
 		if (health < 0){
 			health = 0;
@@ -21,7 +21,6 @@ public class Pokemon{
 		} else if (health > maxHealth){
 			health = maxHealth;
 		}
-		return health;
 	}
 	
 	public String getName(){

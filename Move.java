@@ -5,7 +5,7 @@ public class Move{
     int damMin;
     int damMax;
 
-    public move (String name, int damMin, int damMax){
+    public Move (String name, int damMin, int damMax){
         this.name = name;
         this.damMin = damMin;
         this.damMax = damMax;
